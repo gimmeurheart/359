@@ -1,0 +1,377 @@
+@import "libs";
+@import "fonts";
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1310px;
+    margin: 0 auto;
+    padding-top: 25px;
+
+}
+
+.header__inner {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.header__left {
+    left: 0;
+    min-width: 270px;
+
+    a {
+        text-decoration: none;
+        color: #666666;
+
+        &:hover {
+            color: #000;
+            font-weight: 700;
+        }
+    }
+}
+
+
+.header__slider {
+    display: flex;
+    margin-left: 75px;
+    position: relative;
+    max-width: 760px;
+    width: 100%;
+
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 3;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        outline: none;
+        background-color: transparent;
+        border: none;
+        transition: all .2s ease;
+
+        &:hover {
+            transform: scale(1.5);
+            opacity: .8;
+        }
+
+    }
+
+    .slick-prev {
+        &::before {
+            content: "\f0d9";
+            font-family: 'icomoon';
+            font-size: 32px;
+            color: #d7d1ce;
+
+        }
+    }
+
+    .slick-next {
+        right: 0;
+
+        &::before {
+            content: "\f0da";
+            font-family: 'icomoon';
+            font-size: 32px;
+            color: #d7d1ce;
+        }
+    }
+
+}
+
+.header__slider-item__info {
+    line-height: 1.5;
+    position: absolute;
+    color: #fff;
+    margin-top: -73px;
+    display: flex;
+    width: 405px;
+    background-color: rgba(#000, .5);
+    align-content: center;
+
+}
+
+
+
+.header__slider-item__info-left {
+    padding: 15px 50px 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+
+    .header__slider-subtitle {
+        font-size: 14px;
+        color: #d0d1d1;
+        font-weight: 400;
+    }
+}
+
+.header__slider-item__info-right {
+    padding: 15px 0 10px;
+
+    .header__slider-price {
+        color: #eaaa01;
+        font-weight: 700;
+    }
+}
+
+.header__slider-second {
+    .slick-active:hover {
+        cursor: pointer;
+        opacity: .9;
+    }
+
+    .slick-current {
+        opacity: .5;
+
+    }
+
+    .header__slider-second__item {
+        margin: 15px 0 0 12px;
+    }
+}
+
+.header__title {
+    line-height: 0.8;
+    font-size: 52px;
+    font-weight: 700;
+
+    span {
+        line-height: 1.1;
+        display: block;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 20px 0 60px;
+    }
+}
+
+.header__contact {
+    font-size: 18px;
+    line-height: 0.1;
+    list-style-type: none;
+    color: #666666;
+}
+
+.pop {
+    background-color: #000;
+}
+
+.pop__title {
+    font-size: 52px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.pop__subtitle {
+    font-size: 18px;
+    color: #cbcbcb;
+}
+
+.pop__slider {
+    padding-left: 85px;
+    margin-top: 60px;
+    line-height: 1.5;
+    color: #fff;
+
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 3;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        outline: none;
+        background-color: transparent;
+        border: none;
+    }
+
+    .slick-prev {
+        left: 0;
+
+        &::before {
+            content: "\f0d9";
+            font-family: 'icomoon';
+            font-size: 32px;
+            color: #d7d1ce;
+        }
+    }
+
+    .slick-next {
+        right: 0;
+
+        &::before {
+            content: "\f0da";
+            font-family: 'icomoon';
+            font-size: 32px;
+            color: #d7d1ce;
+        }
+    }
+
+    .pop__slider-name {
+
+        font-size: 18px;
+        font-weight: 700;
+
+    }
+
+    .pop__slider-auth {
+        font-size: 14px;
+        color: #d0d1d1;
+        font-weight: 400;
+    }
+
+    .pop__slider-info {
+        padding: 15px 0 10px;
+        display: flex;
+        position: relative;
+        width: 256px;
+
+        .pop__slider-info__price {
+            color: #eaaa01;
+            font-weight: 700;
+            right: 0;
+            position: absolute;
+        }
+    }
+}
+
+.shadow {
+    animation: shadow 1s infinite alternate;
+    width: 300px;
+}
+
+@keyframes shadow {
+    from {
+        box-shadow: 0 0 55px 10px rgba(red, .6);
+    }
+
+    to {
+        box-shadow: 0 0 70px 20px rgba(red, .6);
+    }
+}
+
+//footer
+
+.footer {
+    background-color: #000;
+    color: #fff;
+
+    .footer-container {
+        width: 870px;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 125px;
+}
+
+.footer__left {
+    padding-bottom: 50px;
+}
+
+.footer__title {
+    font-size: 52px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer__subtitle {
+    font-size: 18px;
+    color: #cbcbcb;
+}
+
+.footer__comp {
+    margin-top: 160px;
+    font-size: 16px;
+    color: #616161;
+}
+
+.footer__processing {
+    margin-top: 20px;
+    font-size: 16px;
+
+
+    a {
+        color: #616161;
+
+        &:hover {
+            color: #cbcbcb;
+        }
+    }
+}
+
+.footer__form {
+    /*max-width: 320px;
+    width: 100%;*/
+
+
+    input,
+    textarea {
+        display: block;
+        width: 100%;
+    }
+
+    input {
+        margin-bottom: 15px;
+        outline: none;
+        width: 320px;
+        height: 40px;
+        border: 1px solid #e5e5e5;
+        padding: 0px 10px;
+    }
+
+    textarea {
+        outline: none;
+        padding: 10px;
+        width: 320px;
+        height: 180px;
+        resize: none;
+
+    }
+
+}
+
+.btn {
+    position: absolute;
+    border: none;
+    margin-top: 15px;
+    background-color: #2400fe;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 14px;
+    right: 0;
+    transition: all .2s;
+
+    &:hover {
+        background-color: #120080;
+        transform: scale(.99);
+
+    }
+
+}
+
+#modal {
+    display: none;
+    width: 770px;
+    text-align: left;
+    font-size: 18px;
+
+    .modal__inner {
+        max-width: 435px;
+    }
+
+    .modal__title {
+        font-size: 26px;
+        font-weight: 700;
+    }
+}
+
+
