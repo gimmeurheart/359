@@ -2,11 +2,15 @@
 <html lang="en">
 
 <head>
+   <link rel="preload" as="font" type="font/woff2"
+   href="assets/fonts/roboto-v20-cyrillic_latin-regular.woff2" crossorigin>
+ <link rel="preload" as="font" type="font/woff2"
+   href="assets/fonts/roboto-v20-cyrillic_latin-700.woff2" crossorigin>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/fancybox.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -33,7 +37,8 @@
 
                 <div class="header__slider">
                     <div class="header__slider-item">
-                        <img src="assets/img/jesus.jpg" alt="">
+                        <img class="lazy" src="" alt=""
+                        data="assets/img/jesus.jpg">
                         <div class="header__slider-item__info">
                             <div class="header__slider-item__info-left">
                                 <div class="header__slider-title">
@@ -54,7 +59,8 @@
                         </div>
                     </div>
                     <div class="header__slider-item">
-                        <img src="assets/img/venera.jpg" alt="">
+                        <img class="lazy" src="" alt=""
+                        data="assets/img/venera.jpg">
                         <div class="header__slider-item__info">
                             <div class="header__slider-item__info-left">
                                 <div class="header__slider-title">
@@ -75,7 +81,8 @@
                         </div>
                     </div>
                     <div class="header__slider-item">
-                        <img src="assets/img/seraphim.jpg" alt="">
+                        <img class="lazy" src="assets/img/seraphim.jpg" alt=""
+                        data="assets/img/seraphim.jpg">
                         <div class="header__slider-item__info">
                             <div class="header__slider-item__info-left">
                                 <div class="header__slider-title">
@@ -99,13 +106,16 @@
                 </div>
                 <div class="header__slider-second">
                     <div class="header__slider-second__item ">
-                        <img class="mini" src="assets/img/jesus-mini.jpg" alt="">
+                        <img class="mini lazy" src="" alt=""
+                        data="assets/img/jesus-mini.jpg">
                     </div>
                     <div class="header__slider-second__item ">
-                        <img class="mini" src="assets/img/venera-mini.jpg" alt="">
+                        <img class="mini lazy" src="" alt=""
+                        data="assets/img/venera-mini.jpg">
                     </div>
                     <div class="header__slider-second__item ">
-                        <img class="mini" src="assets/img/seraphim-mini.jpg" alt="">
+                        <img class="mini lazy" src="" alt=""
+                        data="assets/img/seraphim-mini.jpg">
                     </div>
                 </div>
 
@@ -123,7 +133,8 @@
                 <div class="pop__slider">
 
                     <div class="pop__slider-item">
-                        <div class="shadow"><img src="assets/img/tyan.jpg" alt=""></div>
+                            <img class="lazy" src="" alt=""
+                            data="assets/img/tyan.jpg">
                         <div class="pop__slider-name">
                             Девушка с жемчужной<br>серёжкой, 1665
                         </div>
@@ -140,7 +151,8 @@
                         </div>
                     </div>
                     <div class="pop__slider-item">
-                        <div class="shadow"><img src="assets/img/napoleon.jpg" alt=""></div>
+                        <img class="lazy" src="" alt=""
+                        data="assets/img/napoleon.jpg">
                         <div class="pop__slider-name">
                             Бонапарт на перевале<br>Сен-Бернар, 1801
                         </div>
@@ -157,7 +169,8 @@
                         </div>
                     </div>
                     <div class="pop__slider-item">
-                        <div class="shadow"><img src="assets/img/ohota.jpg" alt=""></div>
+                        <img class="lazy" src="" alt=""
+                        data="assets/img/ohota.jpg">
                         <div class="pop__slider-name">
                             Охотники на снегу 1565
                         </div>
@@ -174,7 +187,8 @@
                         </div>
                     </div>
                     <div class="pop__slider-item">
-                        <div class="shadow"><img src="assets/img/tyan.jpg" alt=""></div>
+                        <img class="lazy" src="" alt=""
+                        data="assets/img/tyan.jpg">
                         <div class="pop__slider-name">
                             Девушка с жемчужной<br>серёжкой, 1665
                         </div>
@@ -191,7 +205,8 @@
                         </div>
                     </div>
                     <div class="pop__slider-item">
-                        <div class="shadow"><img src="assets/img/napoleon.jpg" alt=""></div>
+                            <img class="lazy" src="" alt=""
+                            data="assets/img/napoleon.jpg">
                         <div class="pop__slider-name">
                             Девушка с жемчужной<br>серёжкой, 1665
                         </div>
@@ -208,7 +223,8 @@
                         </div>
                     </div>
                     <div class="pop__slider-item">
-                        <div class="shadow"><img src="assets/img/ohota.jpg" alt=""></div>
+                            <img class="lazy" src="" alt=""
+                            data="assets/img/ohota.jpg">
                         <div class="pop__slider-name">
                             Девушка с жемчужной<br>серёжкой, 1665
                         </div>
@@ -275,8 +291,8 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!--<script src="scripts/jquery.fancybox.min.js"></script>
-    <script src="scripts/libs.min.js"></script>-->
+    <script src="scripts/libs.js"></script>
+    <script src="scripts/lazy.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 
